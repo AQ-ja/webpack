@@ -1,0 +1,20 @@
+{
+  "name": "lab_Webpack",
+  "version": "1.0.0",
+  "description": "Repo correspondiente al lab 07 de sistemeas web",
+  "main": "animextra.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AQ-ja/Lab_Webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AQ-ja/Lab_Webpack/issues"
+  },
+  "homepage": "https://github.com/AQ-ja/Lab_Webpack#readme"
+}

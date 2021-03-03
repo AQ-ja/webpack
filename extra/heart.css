@@ -1,0 +1,46 @@
+.heart {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 0 0 0 10px;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite;
+  }
+  .heart::before,
+  .heart::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #ecf0f1;
+    border-radius: 50%;
+  }
+  .heart::before {
+    top: -50px;
+    background: red;
+    left: 0;
+  }
+  .heart::after {
+    top: 0;
+    background: red;
+    right: -50px;
+  }
+  @keyframes pulse {
+    0%, 20% {
+      transform: rotate(-45deg) scale(1);
+    }
+    30% {
+      transform: rotate(-45deg) scale(1.2);
+    }
+    50% {
+      transform: rotate(-45deg) scale(1);
+    }
+    60% {
+      transform: rotate(-45deg) scale(1.1);
+    }
+    70%, 100% {
+      transform: rotate(-45deg) scale(1);
+    }
+  }
