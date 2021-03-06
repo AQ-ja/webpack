@@ -4,7 +4,8 @@
   "description": "Repo correspondiente al lab 07 de sistemeas web",
   "main": "animextra.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "babel src -d babel-dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/AQ-ja/Lab_Webpack#readme",
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/plugin-transform-block-scoped-functions": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.9",
     "css": "^3.0.0",
     "css-minimizer-webpack-plugin": "^1.2.0",
     "file-loader": "^6.2.0",
@@ -30,6 +37,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^4.6.0",
+    "corejs": "^1.0.0"
   }
 }
