@@ -4,6 +4,7 @@ const presets = [
     {
         useBuiltIns: "usage",
         corejs: "3",
+        targets: "> 0.25%, not dead, not ie 11",
     },
   ],
 ];

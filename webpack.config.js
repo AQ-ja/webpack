@@ -9,10 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
      },
-     plugins: [new MiniCssExtractPlugin()],plugins: [new HtmlWebpackPlugin({template: "./src/pag1/story.html",
-     filename: "story.html",
-     chunks: ["start-story"]})
-    ],
+     plugins: [new MiniCssExtractPlugin()],
      
      module: {
         rules: [{ test: /\.css$/i, use: ["MiniCssExtractPlugin.loader", "css-loader"] },
@@ -26,7 +23,14 @@ module.exports = {
                 },
               },
             ],
+
           },
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: "babel-loader",
+          },
+
         ],
       },
     };
